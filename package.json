@@ -1,14 +1,30 @@
 {
-  "name": "note-taker",
+  "name": "tech_blog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "github.com/Lilyfields/Tech_Blog"
+  },
+  "keywords": [],
+  "author": " Lily",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.17.0",
+    "util": "^0.12.4"
   }
 }
